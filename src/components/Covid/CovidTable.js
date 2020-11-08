@@ -1,11 +1,32 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { covidData } from '../../redux/index';
 
 class CovidTable extends React.Component {
-  render(){
+
+  componentDidMount() {
+    const { covidData } = this.props
+    covidData()
+  }
+
+  render() {
+    console.log(this.props.globalData);
+    console.log(this.props.countryData);
     return (
-      <div>Test</div>
+      <div className="table-responsive">
+        Test
+      </div>
     )
   }
 }
 
-export default CovidTable
+const mapStateToProps = (state) => ({
+  globalData : state.covidStats.global,
+  countryData : state.covidStats.posts
+});
+
+const mapDispatchToProps = dispatch => ({
+  covidData : () => (dispatch(covidData()))
+}); 
+
+export default connect(mapStateToProps, mapDispatchToProps)(CovidTable)

@@ -21,9 +21,12 @@ class App extends React.Component {
           <TravelLayout/>
           <SportsLayout/>
         </section>
-        <section className="mt-5">
+        <section className="covid_layout pt-5">
           <CovidLayout/>
         </section>
+        <footer>
+          
+        </footer>
       </React.Fragment>
     )
   }

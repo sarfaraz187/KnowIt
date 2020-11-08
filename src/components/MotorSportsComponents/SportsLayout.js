@@ -6,6 +6,7 @@ import { fetchSportsNews, nextPost, previousPost } from '../../redux';
 class SportsLayout extends React.Component {
 
   componentDidMount() {
+    // console.log("Props in sports page : ",this.props);
     const { fetchSportsNews } = this.props
     fetchSportsNews("sortBy=publishedAt&language=en&q=F1");
   }

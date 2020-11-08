@@ -360,7 +360,7 @@ a, a:hover {
 }
 
 .card {
-  border: 0px;
+  border: 3px solid white;
 }
 
 .sports_btn {
@@ -397,4 +397,16 @@ a, a:hover {
 
 .sports_published:hover {
   color: #1091FF;
+}
+/* 
+.table-responsive {
+  max-height:300px;
+} */
+/* .table-responsive {
+  overflow-y: hidden;
+} */
+
+.covid_layout {
+  height: 500px;
+  background-color: #17222b;
 }

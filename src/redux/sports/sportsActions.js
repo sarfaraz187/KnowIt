@@ -10,7 +10,7 @@ export const fetchSportsNews = (query) => {
       dispatch(fetchSportsSuccess(sports));
     }).catch(error => {
       dispatch(fetchSportsFailure(error.message));
-    })
+    });
   }
 }
 

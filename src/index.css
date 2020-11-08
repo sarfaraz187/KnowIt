@@ -263,10 +263,10 @@ a, a:hover {
   color: #17222b;
 }
 
-/* Featture layout */
+/* Feature layout */
 
 .feature_body {
-  height: 970px;
+  height: 935px;
   background: linear-gradient(180deg, white 30%, #17222b 30%);
 }
 
@@ -397,16 +397,69 @@ a, a:hover {
 
 .sports_published:hover {
   color: #1091FF;
+} 
+
+/* Sports Style End */
+
+/* Covid Style Start */
+.covid_heading {
+  color: white;
+  margin: 30px 96px 0 107px;;
 }
-/* 
-.table-responsive {
-  max-height:300px;
-} */
-/* .table-responsive {
-  overflow-y: hidden;
-} */
 
 .covid_layout {
-  height: 500px;
+  height: 700px;
   background-color: #17222b;
+}
+
+.global_layout {
+  margin: 30px 96px 0 107px;
+  border: 1px solid #bdbdbd;
+  height: 80px;
+  background-color: #404040;
+  position: relative;
+  /* border: 1px solid #363636; */
+  border-radius: 4px;
+  letter-spacing: 0;
+  color: #bdbdbd;
+}
+
+.border-right {
+  border-color: #bdbdbd;
+}
+
+.count {
+  color: rgb(230, 0, 0);
+  font-weight: 600;
+}
+
+.countries_div {
+  margin: 30px 96px 0 107px;
+}
+
+.country_layout {
+  border: 1px solid #bdbdbd;
+  max-height: 450px;
+  background-color: #404040;
+  border-radius: 4px;
+  color: #bdbdbd;
+  overflow: auto;
+  width: 100%;
+}
+
+.tableFixHead thead th { 
+  position: sticky; 
+  background-color: #404040;
+  color: #bdbdbd;
+  top: 0; 
+  border: none;
+}
+
+.tableFixHead tbody {
+  color: #bdbdbd;
+}
+
+.tableFixHead tbody tr td {
+  border-top: 1px solid  #bdbdbd;
+  color: #bdbdbd;
 }
